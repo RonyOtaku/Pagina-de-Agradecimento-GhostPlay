@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+}
+
+.thank-you-container {
+    text-align: center;
+    margin: 50px auto;
+    max-width: 600px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.thank-you-container h1 {
+    color: #009688;
+}
+
+.thank-you-container img {
+    width: 200px;
+    margin: 20px 0;
+}
+
+.message {
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.contact-support,
+.back-to-home {
+    margin-top: 20px;
+}
+
+.back-to-home a {
+    color: #009688;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.back-to-home a:hover {
+    text-decoration: underline;
+}
+/* ... (código CSS anterior) */
+
+.whatsapp-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.whatsapp-button {
+    background-color: #25D366;
+    border-radius: 50%;
+    width: 60px; /* Ajuste conforme necessário */
+    height: 60px; /* Ajuste conforme necessário */
+    overflow: hidden;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.whatsapp-icon {
+    width: 40; /* Ajuste conforme necessário */
+}
+
+.whatsapp-button:hover {
+    background-color: #128C7E;
+}
+
+.whatsapp-tail {
+    position: absolute;
+    bottom: -10px;
+    right: 50%;
+    transform: translateX(50%);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 10px 0;
+    border-color: #25D366 transparent transparent transparent;
+}
+
+/* ... (código CSS anterior) */
+
+@keyframes glow {
+    0% {
+        color: #25D366;
+        text-shadow: 0 0 10px #25D366, 0 0 20px #25D366, 0 0 30px #25D366;
+    }
+    50% {
+        color: #128C7E;
+        text-shadow: 0 0 20px #128C7E, 0 0 30px #128C7E, 0 0 40px #128C7E;
+    }
+    100% {
+        color: #25D366;
+        text-shadow: 0 0 10px #25D366, 0 0 20px #25D366, 0 0 30px #25D366;
+    }
+}
+
+h1 {
+    animation: glow 3s infinite;
+}
+
+/* ... (código CSS anterior) */
